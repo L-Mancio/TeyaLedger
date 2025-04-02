@@ -15,7 +15,7 @@ test by running:
 - Alternatively you can connect https://localhost:5001/swagger/index.html after spinning up the project and test the endpoints through swagger
 
 Some assumptions:
-- In memory domain objects have been used so no database connections
+- In memory domain objects have been used so no database connections, this means when the app is killed all data is lost 
 - For the transactions a dictionary would be more efficient but Lists are a bit more flexible
 - Some similar logic was skipped for example chekcing the amount on a deposit isn't over double.MaxValue is done only there and not on the withdraw, for the sake of time
 - User can only deposit up to 1 trillion per transaction
