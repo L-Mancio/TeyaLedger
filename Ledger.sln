@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Teya.Ledger.API", "Teya.Ledger.API", "{EEE4910B-1C7D-467E-8B9B-48993947CFA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ledger.API", "Teya.Ledger.API\Ledger.API\Ledger.API.csproj", "{6AB0802F-FB15-4FF7-AA47-95B04ED2717A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Teya.Ledger.Domain", "Teya.Ledger.Domain", "{427D11A7-5C2C-41E5-806A-2ED90CE94C78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ledger.Domain", "Teya.Ledger.Domain\Ledger.Domain\Ledger.Domain.csproj", "{29B19CF4-601A-4173-8EE9-D54D944A7826}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Teya.Ledger.Application", "Teya.Ledger.Application", "{1811FC27-CC8B-7B75-7588-04F38FF21011}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ledger.Application", "Teya.Ledger.Application\Ledger.Application\Ledger.Application.csproj", "{0F45186F-0E8C-4F59-89FD-5154589DE461}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Teya.Ledger.Tests", "Teya.Ledger.Tests", "{F6EDF526-6D8D-8EB7-A968-BEFF77C03E8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ledger.Tests", "Teya.Ledger.Tests\Ledger.Tests\Ledger.Tests.csproj", "{2267A5A0-81B3-45E5-B958-2F7CC6F95595}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AB0802F-FB15-4FF7-AA47-95B04ED2717A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AB0802F-FB15-4FF7-AA47-95B04ED2717A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AB0802F-FB15-4FF7-AA47-95B04ED2717A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AB0802F-FB15-4FF7-AA47-95B04ED2717A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29B19CF4-601A-4173-8EE9-D54D944A7826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29B19CF4-601A-4173-8EE9-D54D944A7826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29B19CF4-601A-4173-8EE9-D54D944A7826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29B19CF4-601A-4173-8EE9-D54D944A7826}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F45186F-0E8C-4F59-89FD-5154589DE461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F45186F-0E8C-4F59-89FD-5154589DE461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F45186F-0E8C-4F59-89FD-5154589DE461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F45186F-0E8C-4F59-89FD-5154589DE461}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2267A5A0-81B3-45E5-B958-2F7CC6F95595}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2267A5A0-81B3-45E5-B958-2F7CC6F95595}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2267A5A0-81B3-45E5-B958-2F7CC6F95595}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2267A5A0-81B3-45E5-B958-2F7CC6F95595}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6AB0802F-FB15-4FF7-AA47-95B04ED2717A} = {EEE4910B-1C7D-467E-8B9B-48993947CFA9}
+		{29B19CF4-601A-4173-8EE9-D54D944A7826} = {427D11A7-5C2C-41E5-806A-2ED90CE94C78}
+		{0F45186F-0E8C-4F59-89FD-5154589DE461} = {1811FC27-CC8B-7B75-7588-04F38FF21011}
+		{2267A5A0-81B3-45E5-B958-2F7CC6F95595} = {F6EDF526-6D8D-8EB7-A968-BEFF77C03E8D}
+	EndGlobalSection
+EndGlobal
