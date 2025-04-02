@@ -27,8 +27,8 @@ public class Transaction
         if(amount <= 0)
             throw new BuisnessRuleException("Amount must be greater than zero");
 
-        if(amount >= double.MaxValue)
-            throw new BuisnessRuleException("Amount must be less than infinity");
+        if(amount >= 1.000000000000)
+            throw new BuisnessRuleException("Amount must be less than 1 trillion");
 
         return new Transaction(Guid.NewGuid(), amount, TransactionType.Deposit, DateTime.UtcNow, description);
 

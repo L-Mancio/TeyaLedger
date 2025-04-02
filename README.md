@@ -18,6 +18,5 @@ Some assumptions:
 - In memory domain objects have been used so no database connections
 - For the transactions a dictionary would be more efficient but Lists are a bit more flexible
 - Some similar logic was skipped for example chekcing the amount on a deposit isn't over double.MaxValue is done only there and not on the withdraw, for the sake of time
-
-
-... might be more i haven't documented
+- User can only deposit up to 1 trillion per transaction
+- Assume transaction is always successful, if it conforms to api validation and business rules validation

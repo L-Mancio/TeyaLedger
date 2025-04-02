@@ -9,7 +9,6 @@ public class LedgerService : ILedgerService
 {
     private Balance _balance = Balance.Create(0, DateTime.UtcNow);
 
-   
     private List<Transaction> _transactions = [];
 
     public async Task<Balance> GetCurrentBalanceAsync() => await Task.FromResult(_balance);
@@ -18,7 +17,7 @@ public class LedgerService : ILedgerService
     {
         var transaction = Transaction.CreateDeposit(amount, "Deposit");
         
-        //todo: assume transaction is always successful, if it conforms to the business rules
+        //assume transaction is always successful, if it conforms to the business rules
         
         _balance.Deposit(amount);
         _transactions.Add(transaction);
@@ -30,7 +29,7 @@ public class LedgerService : ILedgerService
     {
         var transaction = Transaction.CreateWithdrawal(amount, _balance.Amount, "Withdrawal");
 
-        //todo: assume transaction is always successful, if it conforms to the business rules
+        //assume transaction is always successful, if it conforms to the business rules
 
         _balance.Withdraw(amount);
         _transactions.Add(transaction);
