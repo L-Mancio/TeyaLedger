@@ -12,6 +12,7 @@ test by running:
 - <code>Invoke-WebRequest -Uri 'https://localhost:5001/api/ledger/balance' | Select-Object -ExpandProperty Content</code>
 - <code>Invoke-WebRequest -Uri "https://localhost:5001/api/ledger/deposit" -Method POST -Headers @{"Content-Type"="application/json"} -Body '{"amount": 100.0}' | Select-Object -ExpandProperty Content</code>
 
+- Alternatively you can connect https://localhost:5001/swagger/index.html after spinning up the project and test the endpoints through swagger
 
 Some assumptions:
 - In memory domain objects have been used so no database connections
