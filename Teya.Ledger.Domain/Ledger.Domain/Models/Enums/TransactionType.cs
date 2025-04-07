@@ -3,5 +3,9 @@ namespace Ledger.Domain.Models.Enums;
 public enum TransactionType
 {
     Withdrawal,
-    Deposit
+    Deposit,
+
+    Send,
+
+    Receive
 }

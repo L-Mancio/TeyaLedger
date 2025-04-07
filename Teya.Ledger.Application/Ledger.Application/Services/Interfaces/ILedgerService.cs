@@ -1,4 +1,5 @@
 using Ledger.Application.Features.GetTransactions.ApiContracts;
+using Ledger.Application.Features.SendTransaction.ApiContracts;
 using Ledger.Domain.Models;
 
 namespace Ledger.Application.Services.Interfaces;
@@ -9,4 +10,5 @@ public interface ILedgerService
     Task<Transaction> DepositAsync(double amount);
     Task<Transaction> WithdrawAsync(double amount);    
     Task<IReadOnlyList<Transaction>> GetTransactionsAsync(TransactionsRequest request);
+    Task<Transaction> SendTransactionAsync(SendRequest request);
 }

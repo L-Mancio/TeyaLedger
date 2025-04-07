@@ -44,4 +44,9 @@ public class Transaction
 
         return new Transaction(Guid.NewGuid(), amount, TransactionType.Withdrawal, DateTime.UtcNow, description);
     }
+
+    public static Transaction Create(double amount, TransactionType type, string description) 
+    {
+        return new Transaction(Guid.NewGuid(), amount, type, DateTime.UtcNow, description);
+    }
 }

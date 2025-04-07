@@ -7,4 +7,5 @@ public record TransactionResponse(double Amount, TransactionType Type, DateTime 
 {
     public static TransactionResponse FromDomain(Transaction transaction) =>
         new(transaction.Amount, transaction.Type, transaction.Timestamp, transaction.Description);
+
 }

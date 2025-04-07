@@ -6,6 +6,7 @@ using Ledger.Application.Features.Deposit.ApiContract;
 using Ledger.Application.Features.GetCurrentBalance;
 using Ledger.Application.Features.GetTransactions;
 using Ledger.Application.Features.GetTransactions.ApiContracts;
+using Ledger.Application.Features.SendTransaction.ApiContracts;
 using Ledger.Application.Features.Withdraw;
 using Ledger.Application.Features.Withdraw.ApiContract;
 using Microsoft.AspNetCore.Http;
@@ -79,5 +80,20 @@ namespace Ledger.API.Controllers
 
             return CreatedAtAction(nameof(WithdrawTransaction), new { id = withdrawResponse.Id }, withdrawResponse);
         }
+
+        // account object balance, transactions history
+        // transaction between two accounts
+        // send money, receive money
+
+        [HttpPost("send")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(SendResponse))]
+        public async Task<IActionResult> SendTransaction(
+            [FromBody] SendRequest request)
+        {
+            var sendResponse = await transactionsQueryHandler.HandleSendAsync(request);
+
+            return CreatedAtAction(nameof(SendTransaction), new { id = sendResponse.Id }, sendResponse);
+        }
+
     }
 }
